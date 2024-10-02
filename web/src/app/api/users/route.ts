@@ -7,7 +7,7 @@ export async function GET() {
       status: 200,
     });
   } catch (error) {
-    return new Response("hello! there is an error!", {
+    return new Response("hello! there is an error!" + error, {
       status: 200,
     });
   }
