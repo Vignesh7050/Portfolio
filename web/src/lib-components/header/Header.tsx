@@ -5,7 +5,7 @@ import style from "./header.module.css";
 export const Header = () => {
   return (
     <header className={style.headerContainer}>
-      <HeaderTitleSection headerTitle="Developer" />
+      <HeaderTitleSection headerTitle="" />
       <HeaderNavSection />
     </header>
   );

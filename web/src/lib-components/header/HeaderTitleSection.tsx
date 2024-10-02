@@ -17,13 +17,6 @@ export const HeaderTitleSection = (props: HeaderTitleSectionProps) => {
         priority
       />
       <h3 className={style.headerTitle}>{headerTitle}</h3>
-      <Image
-        src={IMAGES.codeIcon}
-        alt="code icon"
-        priority
-        width={20}
-        height={20}
-      />
     </div>
   );
 };

@@ -7,7 +7,6 @@
     display: flex;
     justify-content: space-between;
     padding: 1.5rem;
-    flex-wrap: wrap;
     gap: 15px;
 }
 
@@ -78,10 +77,6 @@
 }
 
 @media (max-width: 480px) {
-    .headerContainer {
-        justify-content: center;
-    }
-    
     .headerContainer .navbarContainer {
         justify-content: space-evenly;
         width: 100%;
