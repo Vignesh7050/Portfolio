@@ -21,8 +21,8 @@ export default async function handler(
         url,
       });
       res.status(201).json(portfolio);
-    } catch (error: any) {
-      res.status(400).json({ error: error.message });
+    } catch (error) {
+      res.status(400).json({ error: "error" });
     }
   } else if (req.method === "GET") {
     // Get all portfolios

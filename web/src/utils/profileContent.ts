@@ -33,22 +33,26 @@ export const profileContent = {
   ],
   contactDetails: [
     {
+      id: 1,
       title: "Email",
       contactUrl: "mailto:vigneshh1958@gmail.com",
       icon: IMAGES.googleIcon,
     },
     {
+      id: 2,
       title: "LinkedIn",
       contactUrl: "https://www.linkedin.com/in/vignesh-acharya-a41952190/",
       icon: IMAGES.linkedInIcon,
     },
     {
+      id: 3,
       title: "Git Hub",
       contactUrl: "https://github.com/Vignesh7050",
       icon: IMAGES.gitHubIcon,
       icon2: IMAGES.gitHubInvertedIcon,
     },
     {
+      id: 4,
       title: "LeetCode",
       contactUrl: "https://leetcode.com/u/vigneshh1958/",
       icon: IMAGES.leetCodeIcon,

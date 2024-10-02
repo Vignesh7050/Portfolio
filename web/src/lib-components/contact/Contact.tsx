@@ -1,4 +1,4 @@
-import { profileContent } from "@/utils";
+import { KeyValuePair, profileContent } from "@/utils";
 import style from "./contact.module.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -8,9 +8,9 @@ export const Contact = () => {
     <section id="contacts" className={style.contactContainer}>
       <h3>Contacts</h3>
       <div className={style.contactDetailsListContainer}>
-        {profileContent.contactDetails.map((contacts: any) => {
+        {profileContent.contactDetails.map((contacts: KeyValuePair, index: number) => {
           return (
-            <Link href={contacts.contactUrl} target="_blank">
+            <Link href={contacts.contactUrl} target="_blank" key={`${contacts.id}-${index}`}>
               <Image
                 className={style.contactDetailsIcons}
                 src={contacts.icon2 || contacts.icon}
