@@ -5,21 +5,30 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: linear-gradient(to right, #0d0f14, rgb(0, 0, 0));
     --foreground: #ededed;
+
+    --primary-color: #0d0f14;
+    --primary-color-1: #0095ff;
+    --primary-color-2: #4cb2fb;
+    --primary-gradient: linear-gradient(to right, #0d0f14, rgb(0, 0, 0));
+    --primary-gradient-1: linear-gradient(to right, black , rgba(4, 38, 66, 0.63));
+
+    --secondar-color-1: #e5e5e5
   }
 }
 
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family:  var(--font-roboto);
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -33,6 +42,15 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  font-family: var(--font-open-sans);
+}
+
+h1 {
+  font-family: var(--font-playfair-display);
+}
+
+.p-10 {
+  padding: 10px;
 }
 
 @media (prefers-color-scheme: dark) {

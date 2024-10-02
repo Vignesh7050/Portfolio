@@ -1,0 +1,10 @@
+.profileContainer {
+  background: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.98),
+      rgba(0, 13, 26, 0.808)
+    ),
+    url(../../assets/images/profilebg.png);
+  background-size: cover;
+  background-attachment: fixed;
+}

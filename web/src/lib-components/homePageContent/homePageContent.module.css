@@ -1,0 +1,63 @@
+.contentContainer {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contentContainer .contentDataContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 70%;
+  justify-content: center;
+}
+
+.authorDesignation {
+  font-size: 20px;
+}
+
+.technicalSkills {
+  margin-top: 15px;
+}
+
+.skillsListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.eachSkill {
+  padding: 8px;
+  border: 1px solid var(--primary-color-2);
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.homePageContentContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.greetingText {
+  font-size: 40px;
+  text-align: center;
+  padding: 20px;
+}
+
+.authorName {
+  color: var(--primary-color-1);
+}
+
+.profileSummary {
+  font-size: 14px;
+  padding: 50px;
+  text-align: center;
+}

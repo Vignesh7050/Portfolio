@@ -1,0 +1,20 @@
+.techSkillsContainer {
+    background-color: rgb(245, 245, 245);
+    padding: 2rem 2rem;
+    color: black;
+}
+
+.skillsContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    width: max-content;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 45px;
+    cursor: pointer;
+    width: 100%;
+}
