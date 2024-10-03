@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --background: linear-gradient(to right, #0d0f14, rgb(0, 0, 0));
   --foreground: #ededed;
