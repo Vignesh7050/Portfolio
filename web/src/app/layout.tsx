@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Open_Sans, Roboto } from "next/font/google";
 
 import "./globals.css";
+import { Providers } from './providers';
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -44,7 +45,7 @@ export default function RootLayout({
       <body
         className={`${roboto.className} ${playfairDisplay.variable} ${openSans.variable}`}
       >
-        {children}
+       <Providers>{children}</Providers>
       </body>
     </html>
   );
