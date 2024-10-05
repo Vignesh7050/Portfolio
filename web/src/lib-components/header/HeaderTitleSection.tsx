@@ -1,22 +1,49 @@
-import { IMAGES } from "@/assets/images";
-import style from "./header.module.css";
-import Image from "next/image";
+'use client';
 
-type HeaderTitleSectionProps = {
-  headerTitle: string;
+import { IMAGES } from '@/assets/images';
+import Image from 'next/image';
+import { Dialog } from '../modals/dialog';
+import { Tooltip, useDisclosure } from '@nextui-org/react';
+
+export const HeaderTitleSection = () => {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  return (
+    <div className='flex items-center gap-4'>
+      <ProfileImg
+        className='flex w-9 h-9 rounded-full cursor-pointer'
+        tooltipContent='Click to View'
+        onClick={onOpen}
+      />
+      {isOpen && (
+        <Dialog
+          dialogSize='md'
+          scrollBehavior={'normal'}
+          isOpen={isOpen}
+          onOpenChange={onOpenChange}
+          headerText='Vignesh Acharya'
+        >
+          <ProfileImg className='w-full' isDisabled={true} />
+        </Dialog>
+      )}
+    </div>
+  );
 };
 
-export const HeaderTitleSection = (props: HeaderTitleSectionProps) => {
-  const { headerTitle = "" } = props;
+const ProfileImg = (props: any) => {
+  const { className, tooltipContent, onClick, isDisabled = false } = props;
   return (
-    <div className={style.headerTitleSection}>
+    <Tooltip
+      isDisabled={isDisabled}
+      content={tooltipContent}
+      className='bg-foreground text-background'
+    >
       <Image
-        className={style.profileImage}
+        className={className}
         src={IMAGES.profile}
-        alt="profile image"
+        alt='profile image'
         priority
+        onClick={onClick}
       />
-      <h3 className={style.headerTitle}>{headerTitle}</h3>
-    </div>
+    </Tooltip>
   );
 };

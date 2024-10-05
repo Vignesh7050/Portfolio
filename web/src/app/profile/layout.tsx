@@ -1,6 +1,4 @@
-import { Header } from "@/lib-components";
-
-import style from "./profile.module.css";
+import { Header } from '@/lib-components';
 
 type ProfileLayoutProps = {
   children: React.ReactNode;
@@ -12,7 +10,7 @@ function ProfileLayout(props: ProfileLayoutProps) {
   return (
     <>
       <Header />
-      <div className={style.profileContainer}>{children}</div>
+      <div className='bg-profile-bg'>{children}</div>
     </>
   );
 }

@@ -3,34 +3,93 @@
 @tailwind utilities;
 
 :root {
-  --background: linear-gradient(to right, #0d0f14, rgb(0, 0, 0));
-  --foreground: #ededed;
+  --color-bg: #ffffff;
+  --color-fg: #070707;
+  --color-primary: #ffffff;
+  --color-primary-90: rgba(13, 15, 20, 0.9);
+  --color-primary-75: rgba(13, 15, 20, 0.75);
+  --color-primary-50: rgba(13, 15, 20, 0.5);
+  --color-primary-25: rgba(13, 15, 20, 0.25);
+  --color-primary-10: rgba(13, 15, 20, 0.1);
+  --color-primary-autor-name: var(--color-fg);
+  --color-header-border: #e5e5e5;
+  --color-button-hover: rgb(221, 234, 255);
+  --color-experience-bg: linear-gradient(
+    to right,
+    #ffffff,
+    #ffffff,
+    #f6fbff,
+    #ffffff
+  );
+  --color-skills-bg: linear-gradient(
+    to right,
+    #f5fafe,
+    #ffffff,
+    #f5faff,
+    #ffffff
+  );
+  --color-contacts-bg: linear-gradient(
+    to right,
+    #ffffff,
+    #ffffff,
+    #f6fbff,
+    #ffffff
+  );
+  --color-header: #000000;
 
-  --primary-color: #0d0f14;
-  --primary-color-1: #0095ff;
-  --primary-color-2: #4cb2fb;
-  --primary-gradient: linear-gradient(to right, #0d0f14, rgb(0, 0, 0));
-  --primary-gradient-1: linear-gradient(to right, black, rgba(4, 38, 66, 0.63));
-
-  --secondar-color-1: #e5e5e5;
+  --color-secondary: #010818;
+  --color-secondary-nav-item-hover: #0095ff;
+  --color-primary-hover: #0073ff;
+  --color-profile-header: linear-gradient(
+    to right,
+    rgba(225, 225, 225, 0.897)
+    #ffff,
+  );
+  --profile-page-bg: linear-gradient(
+      to right,
+      rgba(194, 194, 194, 0.911),
+      rgba(237, 237, 237, 0.911)
+    ),
+    url(../assets/images/profilebg.png);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: linear-gradient(to right, #0d0f14, rgb(0, 0, 0));
-    --foreground: #ededed;
+    --color-bg: #000000;
+    --color-fg: #cecece;
+    --color-primary: #01040e;
+    --color-primary-90: rgba(13, 15, 20, 0.9);
+    --color-primary-75: rgba(13, 15, 20, 0.75);
+    --color-primary-50: rgba(13, 15, 20, 0.5);
+    --color-primary-25: rgba(13, 15, 20, 0.25);
+    --color-primary-10: rgba(13, 15, 20, 0.1);
+    --color-secondary: #0095ff;
+    --color-secondary-nav-item-hover: #0095ff;
+    --color-primary-hover: #0073ff;
+    --color-header-border: #140e47;
+    --color-experience-bg: linear-gradient(to right, #000000, #02091b, #000000);
+    --color-skills-bg: linear-gradient(to right, #000000, #020a1d, #000000);
+    --color-contacts-bg: linear-gradient(to right, #000208, #020a1d, #000208);
+    --color-header: #ffffff;
+    --color-button-hover: #006eff27;
 
-    --primary-color: #0d0f14;
-    --primary-color-1: #0095ff;
-    --primary-color-2: #4cb2fb;
-    --primary-gradient: linear-gradient(to right, #0d0f14, rgb(0, 0, 0));
-    --primary-gradient-1: linear-gradient(
+    --color-profile-header: linear-gradient(
       to right,
-      black,
-      rgba(4, 38, 66, 0.63)
+      var(--color-primary),
+      var(--color-primary-75),
+      rgb(0 35 93 / 50%),
+      var(--color-primary-75),
+      var(--color-primary)
     );
-
-    --secondar-color-1: #e5e5e5;
+    --profile-page-bg: linear-gradient(
+        to bottom right,
+        var(--color-primary),
+        var(--color-primary-90),
+        rgb(1, 8, 21),
+        var(--color-primary-90),
+        var(--color-primary)
+      ),
+      url(../assets/images/profilebg.png);
   }
 }
 
@@ -42,8 +101,8 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--color-fg);
+  background: var(--color-bg);
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
