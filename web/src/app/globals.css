@@ -42,8 +42,7 @@
   --color-primary-hover: #0073ff;
   --color-profile-header: linear-gradient(
     to right,
-    rgba(225, 225, 225, 0.897)
-    #ffff,
+    rgba(225, 225, 225, 0.897) #ffff
   );
   --profile-page-bg: linear-gradient(
       to right,
@@ -53,44 +52,42 @@
     url(../assets/images/profilebg.png);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: #000000;
-    --color-fg: #cecece;
-    --color-primary: #01040e;
-    --color-primary-90: rgba(13, 15, 20, 0.9);
-    --color-primary-75: rgba(13, 15, 20, 0.75);
-    --color-primary-50: rgba(13, 15, 20, 0.5);
-    --color-primary-25: rgba(13, 15, 20, 0.25);
-    --color-primary-10: rgba(13, 15, 20, 0.1);
-    --color-secondary: #0095ff;
-    --color-secondary-nav-item-hover: #0095ff;
-    --color-primary-hover: #0073ff;
-    --color-header-border: #140e47;
-    --color-experience-bg: linear-gradient(to right, #000000, #02091b, #000000);
-    --color-skills-bg: linear-gradient(to right, #000000, #020a1d, #000000);
-    --color-contacts-bg: linear-gradient(to right, #000208, #020a1d, #000208);
-    --color-header: #ffffff;
-    --color-button-hover: #006eff27;
+.dark {
+  --color-bg: #000000;
+  --color-fg: #cecece;
+  --color-primary: #01040e;
+  --color-primary-90: rgba(13, 15, 20, 0.9);
+  --color-primary-75: rgba(13, 15, 20, 0.75);
+  --color-primary-50: rgba(13, 15, 20, 0.5);
+  --color-primary-25: rgba(13, 15, 20, 0.25);
+  --color-primary-10: rgba(13, 15, 20, 0.1);
+  --color-secondary: #0095ff;
+  --color-secondary-nav-item-hover: #0095ff;
+  --color-primary-hover: #0073ff;
+  --color-header-border: #140e47;
+  --color-experience-bg: linear-gradient(to right, #000000, #02091b, #000000);
+  --color-skills-bg: linear-gradient(to right, #000000, #020a1d, #000000);
+  --color-contacts-bg: linear-gradient(to right, #000208, #020a1d, #000208);
+  --color-header: #ffffff;
+  --color-button-hover: #006eff27;
 
-    --color-profile-header: linear-gradient(
-      to right,
+  --color-profile-header: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-primary-75),
+    rgb(0 35 93 / 50%),
+    var(--color-primary-75),
+    var(--color-primary)
+  );
+  --profile-page-bg: linear-gradient(
+      to bottom right,
       var(--color-primary),
-      var(--color-primary-75),
-      rgb(0 35 93 / 50%),
-      var(--color-primary-75),
+      var(--color-primary-90),
+      rgb(1, 8, 21),
+      var(--color-primary-90),
       var(--color-primary)
-    );
-    --profile-page-bg: linear-gradient(
-        to bottom right,
-        var(--color-primary),
-        var(--color-primary-90),
-        rgb(1, 8, 21),
-        var(--color-primary-90),
-        var(--color-primary)
-      ),
-      url(../assets/images/profilebg.png);
-  }
+    ),
+    url(../assets/images/profilebg.png);
 }
 
 html,
@@ -126,10 +123,4 @@ h1 {
 
 .p-10 {
   padding: 10px;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }

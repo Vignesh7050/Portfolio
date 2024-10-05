@@ -1,3 +1,4 @@
+import { ThemeSwitcher } from '../themeSwitcher';
 import { HeaderNavSection } from './headerNavSection';
 import { HeaderTitleSection } from './headerTitleSection';
 
@@ -10,7 +11,10 @@ export const Header = () => {
                 backdrop-blur-xl items-center border-b border-header-border'
     >
       <HeaderTitleSection />
-      <HeaderNavSection />
+      <div className='flex items-center gap-6'>
+        <ThemeSwitcher />
+        <HeaderNavSection />
+      </div>
     </header>
   );
 };
