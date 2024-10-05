@@ -1,5 +1,6 @@
-export { WorkExperience } from "./workExperience/WorkExperience";
-export { HomePageContent } from "./homePageContent/HomePageContent";
-export { Header } from "./header/Header";
-export { TechSkills } from "./techSkills/TechSkills";
-export { Contact } from "./contact/Contact";
+export { WorkExperience } from './workExperience';
+export { HomePageContent } from './homePageContent/homePageContent';
+export { Header } from './header/header';
+export { TechSkills } from './techSkills';
+export { Contact } from './contact';
+export { PortfolioRoadMap } from './portfolioRoadMap';

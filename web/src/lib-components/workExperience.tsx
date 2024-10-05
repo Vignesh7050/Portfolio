@@ -1,19 +1,20 @@
-import Link from "next/link";
-import Image from "next/image";
-
-import style from "./experience.module.css";
-import { IMAGES } from "@/assets/images";
+import Link from 'next/link';
+import Image from 'next/image';
+import { IMAGES } from '@/assets/images';
 
 export const WorkExperience = () => {
   return (
-    <section id="experience" className={style.experienceContainer}>
-      <div style={{ gap: "10px", display: "flex", flexDirection: "column" }}>
-        <h3>Work Experience</h3>
+    <section
+      id='experience'
+      className='bg-experience-bg w-full h-max flex p-6 py-12 border-t border-header-border'
+    >
+      <div style={{ gap: '10px', display: 'flex', flexDirection: 'column' }}>
+        <h3 className='font-bold text-xl text-header-color'>Work Experience</h3>
 
-        <ul style={{ paddingLeft: "20px" }}>
-          <li style={{ listStyle: "none" }}>
+        <ul style={{ paddingLeft: '20px' }}>
+          <li style={{ listStyle: 'none' }}>
             <h4>SpurTree Technologies Pvt Ltd | August 2021 - Present</h4>
-            <ul className={style.experiencesList}>
+            <ul className='list-disc p-4 px-6'>
               <li>
                 Developed and maintained scalable web applications using
                 React.js and Node.js.
@@ -32,17 +33,17 @@ export const WorkExperience = () => {
               </li>
             </ul>
           </li>
-          <div className={style.downloadResumeContainer}>
-            <p className={style.moreInfoText}>For project & more details </p>
+          <div className='flex items-center flex-col gap-3 sm:items-start sm:flex-col pt-10'>
+            <p className='text-sm'>Check out my latest resume here</p>
             <Link
-              className={style.downloadResumeLink}
-              target="_blank"
-              href={process.env.RESUME_GOOGLE_DOC_LINK || "/"}
+              className='p-2 px-4 flex border border-dotted rounded-lg border-foreground gap-3 w-fit hover:bg-button-hover'
+              target='_blank'
+              href={process.env.RESUME_GOOGLE_DOC_LINK || '/'}
             >
-              <p>Download Resume</p>
+              <p className='text-sm'>Resume Download</p>
               <Image
                 src={IMAGES.downloadIcon}
-                alt="download resume"
+                alt='download resume'
                 priority
                 width={15}
                 height={15}
