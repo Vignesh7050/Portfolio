@@ -4,3 +4,4 @@ export { Contact } from './contact';
 export { PortfolioRoadMap } from './portfolioRoadMap';
 export { HomePageContent } from './homePageContent/homePageContent';
 export { Header } from './header/header';
+export { ThemeSwitcher } from './themeSwitcher';
