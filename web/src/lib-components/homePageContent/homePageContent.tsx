@@ -14,12 +14,12 @@ export const HomePageContent = (props: HomePageContentProps) => {
 
   return (
     <div
-      className='flex flex-col justify-center items-center w-full h-screen'
+      className='flex flex-col justify-center items-center w-full min-h-screen'
       id='home'
     >
       <h1 className='text-3xl text-center p-10'>
         Hello &#128075;, I&apos;m{' '}
-        <strong className='text-header-color text-4xl whitespace-nowrap'>
+        <strong className='text-header-color text-5xl'>
           {pageContent.authorName}
         </strong>
       </h1>
