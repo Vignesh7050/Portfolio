@@ -13,10 +13,11 @@ export const TechSkills = () => {
     >
       <h3 className='font-bold text-xl text-header-color'>Technical Skills</h3>
       <div className='flex justify-center items-center flex-wrap cursor-pointer gap-10 py-10'>
-        {skillsList.map((skill: KeyValuePair) => (
+        {skillsList.map((skill: KeyValuePair, index: number) => (
           <Tooltip
             content={skill.titleContent}
             className='bg-foreground text-background'
+            key={index}
           >
             <Image
               src={skill.src}
