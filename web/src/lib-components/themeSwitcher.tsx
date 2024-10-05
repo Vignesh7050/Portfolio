@@ -49,7 +49,7 @@ const ThemeSwitcher = () => {
         >
           {themes.map((item: ThemeItem) => {
             return (
-              <DropdownItem key={item.key} onPress={() => setTheme(item.value)}>
+              <DropdownItem key={item.key} onPress={() => setTheme(item.key)}>
                 {item.value}
               </DropdownItem>
             );
