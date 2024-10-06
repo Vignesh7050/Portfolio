@@ -14,9 +14,8 @@ import { IMAGES } from '@/assets/images';
 import Image from 'next/image';
 
 export const HeaderNavSection = () => {
-  const [navItemSelected, setNavItemSelected] = React.useState(
-    window?.location?.hash || '#home'
-  );
+  /**Build issue: need to check why window object is not accessible here */
+  const [navItemSelected, setNavItemSelected] = React.useState('#home');
 
   const handleNavItemClick = (item: KeyValuePair) => {
     setNavItemSelected(item.path);
