@@ -27,36 +27,34 @@ const ThemeSwitcher = () => {
   if (!mounted) return null;
 
   return (
-    <div>
-      <Dropdown>
-        <DropdownTrigger>
-          <Image
-            className='cursor-pointer'
-            src={IMAGES.settingsIcon}
-            alt='settings'
-            priority
-            width={20}
-            height={20}
-          />
-        </DropdownTrigger>
-        <DropdownMenu
-          aria-label='theme selection'
-          variant='flat'
-          disallowEmptySelection
-          selectionMode='single'
-          selectedKeys={selectedKeys}
-          onSelectionChange={setSelectedKeys}
-        >
-          {themes.map((item: ThemeItem) => {
-            return (
-              <DropdownItem key={item.key} onPress={() => setTheme(item.key)}>
-                {item.value}
-              </DropdownItem>
-            );
-          })}
-        </DropdownMenu>
-      </Dropdown>
-    </div>
+    <Dropdown>
+      <DropdownTrigger>
+        <Image
+          className='cursor-pointer'
+          src={IMAGES.settingsIcon}
+          alt='settings'
+          priority
+          width={20}
+          height={20}
+        />
+      </DropdownTrigger>
+      <DropdownMenu
+        aria-label='theme selection'
+        variant='flat'
+        disallowEmptySelection
+        selectionMode='single'
+        selectedKeys={selectedKeys}
+        onSelectionChange={setSelectedKeys}
+      >
+        {themes.map((item: ThemeItem) => {
+          return (
+            <DropdownItem key={item.key} onPress={() => setTheme(item.key)}>
+              {item.value}
+            </DropdownItem>
+          );
+        })}
+      </DropdownMenu>
+    </Dropdown>
   );
 };
 

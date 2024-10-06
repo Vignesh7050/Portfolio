@@ -18,7 +18,7 @@
   --color-experience-date: rgb(84, 88, 94);
   --color-section-secondary-text: rgb(22, 22, 22);
 
-  --color-section-bg: linear-gradient(to right, #ffffff, #e3f3ff, #ffffff);
+  --color-section-bg: linear-gradient(to right, #ffffff, #ecf6ff, #ffffff);
 
   --color-header: #000000;
 
@@ -101,7 +101,6 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-  font-family: var(--font-open-sans);
 }
 
 h1 {
