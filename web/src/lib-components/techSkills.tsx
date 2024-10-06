@@ -8,10 +8,7 @@ import { SectionContainer } from './sectionContainer';
 
 export const TechSkills = () => {
   return (
-    <SectionContainer
-      id='techSkills'
-      headerName={textConstants.technicalSkills}
-    >
+    <SectionContainer id='techstack' headerName={textConstants.techStack}>
       <div className='flex justify-center items-center flex-wrap cursor-pointer gap-10 '>
         {skillsList.map((skill: KeyValuePair, index: number) => (
           <Tooltip

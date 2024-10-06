@@ -14,13 +14,25 @@ import { IMAGES } from '@/assets/images';
 import Image from 'next/image';
 
 export const HeaderNavSection = () => {
+  const [navItemSelected, setNavItemSelected] = React.useState(location.hash);
+
+  const handleNavItemClick = (item: KeyValuePair) => {
+    setNavItemSelected(item.path);
+  };
+
   return (
     <>
       <nav className='flex justify-between items-center h-fit text-sm font-bold hidden w-full md:block md:w-auto'>
         <ul className='flex list-none gap-x-6'>
           {navItems.map((item: KeyValuePair) => {
             return (
-              <li key={item.id} className='hover:text-nav-item-hover'>
+              <li
+                key={item.id}
+                className={`hover:text-nav-item-hover ${
+                  navItemSelected === item.path ? 'text-nav-item-selected' : ''
+                }`}
+                onClick={() => handleNavItemClick(item)}
+              >
                 <Link href={item.path}>{item.label}</Link>
               </li>
             );
@@ -42,7 +54,16 @@ export const HeaderNavSection = () => {
           <DropdownMenu>
             {navItems.map((item: KeyValuePair) => {
               return (
-                <DropdownItem key={item.id} href={item.path}>
+                <DropdownItem
+                  key={item.id}
+                  href={item.path}
+                  className={` ${
+                    navItemSelected === item.path
+                      ? 'text-nav-item-selected'
+                      : ''
+                  }`}
+                  onClick={() => handleNavItemClick(item)}
+                >
                   {item.label}
                 </DropdownItem>
               );

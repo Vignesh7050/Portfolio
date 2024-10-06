@@ -1,22 +1,24 @@
+import { textConstants } from './text.constants';
+
 export const navItems = [
   {
     id: 1,
-    label: "Home",
-    path: "#home",
+    label: textConstants.home,
+    path: '#home',
   },
   {
     id: 2,
-    label: "Experience",
-    path: "/profile#experience",
+    label: textConstants.experience,
+    path: '#experience',
   },
   {
     id: 3,
-    label: "Skills",
-    path: "#techSkills",
+    label: textConstants.techStack,
+    path: '#techstack',
   },
   {
     id: 4,
-    label: "Contacts",
-    path: "#contacts",
+    label: textConstants.contact,
+    path: '#contact',
   },
 ];

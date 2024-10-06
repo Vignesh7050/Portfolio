@@ -6,7 +6,7 @@ import { EntityDisplayStartEndDate } from './entityDisplayStartEndDate';
 
 export const WorkExperience = () => {
   return (
-    <SectionContainer id='experience' headerName={textConstants.workExperience}>
+    <SectionContainer id='experience' headerName={textConstants.experience}>
       {workExperience.map((experience: KeyValuePair, index: number) => {
         return (
           <ul className='list-none' key={`${experience.id}-${index}`}>
