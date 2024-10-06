@@ -12,7 +12,7 @@ import { SectionContainer } from './sectionContainer';
 
 export const Contact = () => {
   return (
-    <SectionContainer id='contacts' headerName={textConstants.contacts}>
+    <SectionContainer id='contact' headerName={textConstants.contact}>
       <div className='flex justify-center items-center gap-10'>
         {profileContent.contactDetails.map(
           (contacts: KeyValuePair, index: number) => {
@@ -32,11 +32,7 @@ export const Contact = () => {
                     </PopoverTrigger>
                     <PopoverContent className='flex flex-col gap-2 p-2'>
                       {contacts.additionalInfo && (
-                        <Snippet
-                          hideSymbol
-                        >
-                          {contacts.additionalInfo}
-                        </Snippet>
+                        <Snippet hideSymbol>{contacts.additionalInfo}</Snippet>
                       )}
                       <Link
                         href={contacts.contactUrl}

@@ -17,14 +17,13 @@
   --color-organization-name: #355da1;
   --color-experience-date: rgb(84, 88, 94);
   --color-section-secondary-text: rgb(22, 22, 22);
-
   --color-section-bg: linear-gradient(to right, #ffffff, #ecf6ff, #ffffff);
-
   --color-header: #000000;
-
   --color-secondary: #030b1e;
   --color-secondary-nav-item-hover: #0095ff;
-  --color-primary-hover: #0073ff;
+  --color-primary-hover: #3c94ff;
+  --color-nav-item-selected: #0095ff;
+
   --color-profile-header: linear-gradient(
     to right,
     rgba(225, 225, 225, 0.897) #ffff
@@ -50,13 +49,13 @@
   --color-secondary-nav-item-hover: #0095ff;
   --color-primary-hover: #0073ff;
   --color-header-border: #0d0934;
-
   --color-section-bg: linear-gradient(to right, #000000, #02091b, #000000);
   --color-header: #ffffff;
   --color-button-hover: #9ab6cc27;
   --color-organization-name: #5d84c2;
   --color-experience-date: rgb(103, 103, 103);
   --color-section-secondary-text: rgb(168, 168, 168);
+  --color-nav-item-selected: #0095ff;
 
   --color-profile-header: linear-gradient(
     to right,

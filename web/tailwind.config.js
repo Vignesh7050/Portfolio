@@ -21,6 +21,7 @@ module.exports = {
         'organization-name': 'var(--color-organization-name)',
         'experience-date': 'var(--color-experience-date)',
         'section-secondary': 'var(--color-section-secondary-text)',
+        'nav-item-selected': 'var(--color-nav-item-selected)',
       },
       backgroundImage: {
         'profile-header': 'var(--color-profile-header)',
