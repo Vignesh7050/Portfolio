@@ -17,4 +17,5 @@ export const textConstants = {
   clickToViewMyPaintings: 'Click To View My Paintings',
   paintings: 'Paintings',
   hobbies: 'Hobbies',
+  hello: 'Hello',
 };
