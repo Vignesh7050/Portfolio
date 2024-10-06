@@ -19,7 +19,7 @@ export const HomePageContent = (props: HomePageContentProps) => {
     >
       <h2 className='text-4xl text-center p-10'>Hello &#128075;, I&apos;m </h2>
       <h1>
-        <strong className='text-header-color text-6xl'>
+        <strong className='text-header-color text-5xl'>
           {pageContent.authorName}
         </strong>
       </h1>
