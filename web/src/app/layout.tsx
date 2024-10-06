@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Playfair_Display, Open_Sans, Roboto } from 'next/font/google';
+import { Playfair_Display, Open_Sans, Roboto_Slab } from 'next/font/google';
 
 import './globals.css';
 import { Providers } from './providers';
@@ -10,10 +10,10 @@ const openSans = Open_Sans({
   variable: '--font-open-sans',
 });
 
-const roboto = Roboto({
+const robotoSlab = Roboto_Slab({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-roboto',
+  variable: '--font-roboto-slab',
   weight: ['100', '400', '700'],
 });
 
@@ -65,7 +65,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${roboto.className} ${playfairDisplay.variable} ${openSans.variable}`}
+        className={`${robotoSlab.className} ${playfairDisplay.variable} ${openSans.variable}`}
       >
         <Providers>{children}</Providers>
       </body>

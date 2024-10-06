@@ -20,6 +20,19 @@ import codeIcon from './Code.svg';
 import menuIcon from './Menu.svg';
 import settingsIcon from './settings.svg';
 import dropdownIcon from './dropdownIcon.svg';
+import hobbyImg1 from './hobbyImg1.jpg';
+import hobbyImg2 from './hobbyImg2.jpg';
+import hobbyImg3 from './hobbyImg3.jpg';
+import hobbyImg4 from './hobbyImg4.jpg';
+import hobbyImg5 from './hobbyImg5.jpg';
+import hobbyImg6 from './hobbyImg6.jpg';
+import hobbyImg7 from './hobbyImg7.jpg';
+import hobbyImg8 from './hobbyImg8.jpg';
+import hobbyImg9 from './hobbyImg9.jpg';
+import hobbyImg10 from './hobbyImg10.jpg';
+import hobbyImg11 from './hobbyImg11.jpg';
+import hobbyImg12 from './hobbyImg12.jpg';
+import paintBushImg from './paintBrushImg.png';
 
 export const IMAGES = {
   profile,
@@ -44,4 +57,17 @@ export const IMAGES = {
   menuIcon,
   settingsIcon,
   dropdownIcon,
+  hobbyImg1,
+  hobbyImg2,
+  hobbyImg3,
+  hobbyImg4,
+  hobbyImg5,
+  hobbyImg6,
+  hobbyImg7,
+  hobbyImg8,
+  hobbyImg9,
+  hobbyImg10,
+  hobbyImg11,
+  hobbyImg12,
+  paintBushImg,
 };
