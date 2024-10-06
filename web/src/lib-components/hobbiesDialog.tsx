@@ -1,4 +1,4 @@
-import { paintingsList, textConstants } from '@/utils';
+import { KeyValuePair, paintingsList, textConstants } from '@/utils';
 import { Dialog } from './modals/dialog';
 import Image from 'next/image';
 import { IMAGES } from '@/assets/images';
@@ -32,13 +32,14 @@ export const HobbiesDialog = (props: HobbiesDialogProps) => {
           dialogSize='md'
           scrollBehavior='outside'
         >
-          {paintingsList.map((painting: any) => {
+          {paintingsList.map((painting: KeyValuePair, index: number) => {
             return (
               <Image
                 className='w-full h-auto rounded-lg'
                 src={painting.imageUrl}
                 alt='profile image'
                 priority
+                key={`${painting.id}-${index}`}
               />
             );
           })}

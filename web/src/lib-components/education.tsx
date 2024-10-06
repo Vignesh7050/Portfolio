@@ -6,9 +6,12 @@ import { EntityDisplayStartEndDate } from './entityDisplayStartEndDate';
 export const Education = () => {
   return (
     <SectionContainer id='education' headerName={textConstants.education}>
-      {educationDetails.map((education: KeyValuePair) => {
+      {educationDetails.map((education: KeyValuePair, index: number) => {
         return (
-          <div className='flex justify-center flex-col items-center'>
+          <div
+            className='flex justify-center flex-col items-center'
+            key={`${education.id}-${index}`}
+          >
             <ul>
               <li>
                 <EntityHeader entityHeader={education.instituteName} />
