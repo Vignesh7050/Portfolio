@@ -33,6 +33,7 @@ import hobbyImg10 from './hobbyImg10.jpg';
 import hobbyImg11 from './hobbyImg11.jpg';
 import hobbyImg12 from './hobbyImg12.jpg';
 import paintBushImg from './paintBrushImg.png';
+import waveImg from './wave.png';
 
 export const IMAGES = {
   profile,
@@ -70,4 +71,5 @@ export const IMAGES = {
   hobbyImg11,
   hobbyImg12,
   paintBushImg,
+  waveImg,
 };
