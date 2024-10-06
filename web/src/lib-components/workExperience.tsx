@@ -7,9 +7,9 @@ import { EntityDisplayStartEndDate } from './entityDisplayStartEndDate';
 export const WorkExperience = () => {
   return (
     <SectionContainer id='experience' headerName={textConstants.workExperience}>
-      {workExperience.map((experience: KeyValuePair) => {
+      {workExperience.map((experience: KeyValuePair, index: number) => {
         return (
-          <ul className='list-none'>
+          <ul className='list-none' key={`${experience.id}-${index}`}>
             <li className='gap-2'>
               <EntityHeader entityHeader={experience.companyName} />
               <EntityDisplayStartEndDate
@@ -18,13 +18,18 @@ export const WorkExperience = () => {
                 className='text-center md:text-start '
               />
               <ul className='list-disc p-5 px-10'>
-                {experience.experienceDetails?.map((details: KeyValuePair) => {
-                  return (
-                    <li className='p-1 text-section-secondary'>
-                      {details.text}
-                    </li>
-                  );
-                })}
+                {experience.experienceDetails?.map(
+                  (details: KeyValuePair, detailsIndex: number) => {
+                    return (
+                      <li
+                        className='p-1 text-section-secondary'
+                        key={`${details.id}-${detailsIndex}`}
+                      >
+                        {details.text}
+                      </li>
+                    );
+                  }
+                )}
               </ul>
             </li>
           </ul>
