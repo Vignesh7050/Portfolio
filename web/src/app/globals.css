@@ -12,32 +12,17 @@
   --color-primary-25: rgba(13, 15, 20, 0.25);
   --color-primary-10: rgba(13, 15, 20, 0.1);
   --color-primary-autor-name: var(--color-fg);
-  --color-header-border: #e5e5e5;
+  --color-header-border: #cad5dc;
   --color-button-hover: rgb(221, 234, 255);
-  --color-experience-bg: linear-gradient(
-    to right,
-    #ffffff,
-    #ffffff,
-    #f6fbff,
-    #ffffff
-  );
-  --color-skills-bg: linear-gradient(
-    to right,
-    #f5fafe,
-    #ffffff,
-    #f5faff,
-    #ffffff
-  );
-  --color-contacts-bg: linear-gradient(
-    to right,
-    #ffffff,
-    #ffffff,
-    #f6fbff,
-    #ffffff
-  );
+  --color-organization-name: #355da1;
+  --color-experience-date: rgb(84, 88, 94);
+  --color-section-secondary-text: rgb(22, 22, 22);
+
+  --color-section-bg: linear-gradient(to right, #ffffff, #e3f3ff, #ffffff);
+
   --color-header: #000000;
 
-  --color-secondary: #010818;
+  --color-secondary: #030b1e;
   --color-secondary-nav-item-hover: #0095ff;
   --color-primary-hover: #0073ff;
   --color-profile-header: linear-gradient(
@@ -54,7 +39,7 @@
 
 .dark {
   --color-bg: #000000;
-  --color-fg: #cecece;
+  --color-fg: #ffffff;
   --color-primary: #01040e;
   --color-primary-90: rgba(13, 15, 20, 0.9);
   --color-primary-75: rgba(13, 15, 20, 0.75);
@@ -64,12 +49,14 @@
   --color-secondary: #0095ff;
   --color-secondary-nav-item-hover: #0095ff;
   --color-primary-hover: #0073ff;
-  --color-header-border: #140e47;
-  --color-experience-bg: linear-gradient(to right, #000000, #02091b, #000000);
-  --color-skills-bg: linear-gradient(to right, #000000, #020a1d, #000000);
-  --color-contacts-bg: linear-gradient(to right, #000208, #020a1d, #000208);
+  --color-header-border: #0d0934;
+
+  --color-section-bg: linear-gradient(to right, #000000, #02091b, #000000);
   --color-header: #ffffff;
-  --color-button-hover: #006eff27;
+  --color-button-hover: #9ab6cc27;
+  --color-organization-name: #5d84c2;
+  --color-experience-date: rgb(103, 103, 103);
+  --color-section-secondary-text: rgb(168, 168, 168);
 
   --color-profile-header: linear-gradient(
     to right,
@@ -94,7 +81,7 @@ html,
 body {
   max-width: 100vw;
   scroll-behavior: smooth;
-  font-family: var(--font-roboto);
+  font-family: var(--font-roboto-slab);
 }
 
 body {

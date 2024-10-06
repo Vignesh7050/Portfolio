@@ -1,9 +1,12 @@
 import {
   Contact,
+  Education,
+  Hobbies,
   HomePageContent,
+  LastUpdated,
   TechSkills,
   WorkExperience,
-} from "@/lib-components";
+} from '@/lib-components';
 
 export default function ProfilePage() {
   return (
@@ -11,7 +14,10 @@ export default function ProfilePage() {
       <HomePageContent pageContent={undefined} />
       <WorkExperience />
       <TechSkills />
+      <Education />
+      <Hobbies />
       <Contact />
+      <LastUpdated />
     </>
   );
 }
