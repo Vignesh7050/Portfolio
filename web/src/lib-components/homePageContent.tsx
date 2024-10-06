@@ -17,7 +17,7 @@ export const HomePageContent = (props: HomePageContentProps) => {
       className='flex flex-col justify-center items-center w-full min-h-screen gap-3'
       id='home'
     >
-      <h1 className='text-4xl text-center p-10'>Hello &#128075;, I&apos;m </h1>
+      <h2 className='text-4xl text-center p-10'>Hello &#128075;, I&apos;m </h2>
       <h1>
         <strong className='text-header-color text-6xl'>
           {pageContent.authorName}
