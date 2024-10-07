@@ -19,4 +19,5 @@ export const textConstants = {
   hello: 'Hello',
   home: 'Home',
   experience: 'Experience',
+  redirectionPageMessage: 'Redirecting to Home page, Please wait...',
 };
