@@ -2,7 +2,7 @@
 
 import { IMAGES } from '@/assets/images';
 import Image from 'next/image';
-import { Dialog } from '../modals/dialog';
+import { Dialog } from '../base-components/dialog';
 import { Tooltip, useDisclosure } from '@nextui-org/react';
 
 export const HeaderTitleSection = () => {

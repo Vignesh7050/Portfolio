@@ -32,6 +32,11 @@ module.exports = {
         16: '4rem',
         18: '4.5rem',
       },
+      borderWidth: {
+        DEFAULT: '1px',
+        0: '0',
+        1.5: '1.5px',
+      },
     },
   },
   darkMode: 'class',

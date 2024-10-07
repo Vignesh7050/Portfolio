@@ -12,17 +12,18 @@
   --color-primary-25: rgba(13, 15, 20, 0.25);
   --color-primary-10: rgba(13, 15, 20, 0.1);
   --color-primary-autor-name: var(--color-fg);
-  --color-header-border: #cad5dc;
+  --color-header-border: #e3e3e3;
   --color-button-hover: rgb(221, 234, 255);
-  --color-organization-name: #355da1;
-  --color-experience-date: rgb(84, 88, 94);
+  --color-organization-name: #003799;
+  --color-experience-date: rgb(69, 72, 78);
   --color-section-secondary-text: rgb(22, 22, 22);
   --color-section-bg: linear-gradient(to right, #ffffff, #ecf6ff, #ffffff);
-  --color-header: #000000;
+  --color-header: #00024c;
   --color-secondary: #030b1e;
   --color-secondary-nav-item-hover: #0095ff;
   --color-primary-hover: #3c94ff;
   --color-nav-item-selected: #0095ff;
+  --color-button-filled-background: rgb(193 228 255);
 
   --color-profile-header: linear-gradient(
     to right,
@@ -48,12 +49,12 @@
   --color-secondary: #0095ff;
   --color-secondary-nav-item-hover: #0095ff;
   --color-primary-hover: #0073ff;
-  --color-header-border: #0d0934;
+  --color-header-border: #0e0a3d;
   --color-section-bg: linear-gradient(to right, #000000, #02091b, #000000);
-  --color-header: #ffffff;
+  --color-header: #c7dcff;
   --color-button-hover: #9ab6cc27;
-  --color-organization-name: #5d84c2;
-  --color-experience-date: rgb(103, 103, 103);
+  --color-organization-name: #b2cefb;
+  --color-experience-date: rgb(136, 136, 136);
   --color-section-secondary-text: rgb(168, 168, 168);
   --color-nav-item-selected: #0095ff;
 

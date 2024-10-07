@@ -1,10 +1,10 @@
 'use client';
-import { profileContent, textConstants } from '@/utils';
-import { Button, useDisclosure } from '@nextui-org/react';
-import { Dialog } from './modals/dialog';
-import { PortfolioRoadMap } from '.';
+
 import Image from 'next/image';
+
+import { profileContent, textConstants } from '@/utils';
 import { IMAGES } from '@/assets/images';
+import { PortfolioRoadMap } from './roadmap/portfolioRoadMap';
 
 type HomePageContentProps = {
   pageContent: any;
@@ -12,7 +12,6 @@ type HomePageContentProps = {
 
 export const HomePageContent = (props: HomePageContentProps) => {
   const { pageContent = profileContent } = props;
-  const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
     <div
@@ -39,24 +38,7 @@ export const HomePageContent = (props: HomePageContentProps) => {
       <p className='text-lg p-3 pb-20 text-center'>
         {pageContent.profileSummary}
       </p>
-      <Button
-        className='border border-dotted text-foreground'
-        onPress={onOpen}
-        size='md'
-        variant='bordered'
-        color='secondary'
-      >
-        {textConstants.viewPortfolioRoadmap}
-      </Button>
-      {isOpen && (
-        <Dialog
-          isOpen={isOpen}
-          onOpenChange={onOpenChange}
-          headerText={textConstants.developmentRoadmap}
-        >
-          <PortfolioRoadMap />
-        </Dialog>
-      )}
+      <PortfolioRoadMap />
     </div>
   );
 };

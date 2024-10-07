@@ -1,8 +1,8 @@
 import { KeyValuePair, textConstants, workExperience } from '@/utils';
-import { DownloadResume } from './downloadResume';
 import { SectionContainer } from './sectionContainer';
 import { EntityHeader } from './entityHeading';
 import { EntityDisplayStartEndDate } from './entityDisplayStartEndDate';
+import { ResumeSection } from './resume/resumeSection';
 
 export const WorkExperience = () => {
   return (
@@ -35,7 +35,7 @@ export const WorkExperience = () => {
           </ul>
         );
       })}
-      <DownloadResume />
+      <ResumeSection />
     </SectionContainer>
   );
 };

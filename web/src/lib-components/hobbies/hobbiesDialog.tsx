@@ -1,5 +1,5 @@
 import { KeyValuePair, paintingsList, textConstants } from '@/utils';
-import { Dialog } from './modals/dialog';
+import { Dialog } from '../base-components/dialog';
 import Image from 'next/image';
 import { IMAGES } from '@/assets/images';
 

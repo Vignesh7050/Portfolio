@@ -1,11 +1,12 @@
 import {
-  Button,
   Modal,
   ModalBody,
   ModalContent,
   ModalFooter,
   ModalHeader,
 } from '@nextui-org/react';
+import { ButtonWrapper } from '..';
+import { textConstants } from '@/utils';
 
 export const Dialog = (props: any) => {
   const {
@@ -15,6 +16,7 @@ export const Dialog = (props: any) => {
     dialogSize = 'full',
     scrollBehavior = 'inside',
     headerText = '',
+    footerContentButtonLeft,
   } = props;
   return (
     <>
@@ -27,19 +29,15 @@ export const Dialog = (props: any) => {
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className='flex flex-col gap-1'>
+              <ModalHeader className='flex flex-col gap-1 border-b border-header-border'>
                 {headerText}
               </ModalHeader>
               <ModalBody>{children}</ModalBody>
-              <ModalFooter>
-                <Button
-                  size='sm'
-                  className='text-foreground font-semibold'
-                  variant='shadow'
-                  onPress={onClose}
-                >
-                  Close
-                </Button>
+              <ModalFooter className='border-t border-header-border gap-2 flex items-center'>
+                {footerContentButtonLeft}
+                <ButtonWrapper onPress={onClose} variant='solid'>
+                  {textConstants.close}
+                </ButtonWrapper>
               </ModalFooter>
             </>
           )}

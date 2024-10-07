@@ -34,6 +34,8 @@ import hobbyImg11 from './hobbyImg11.jpg';
 import hobbyImg12 from './hobbyImg12.jpg';
 import paintBushImg from './paintBrushImg.png';
 import waveImg from './wave.png';
+import viewFileIcon from './viewfileIcon.svg';
+import roadmapIcon from './roadmapIcon.svg';
 
 export const IMAGES = {
   profile,
@@ -72,4 +74,6 @@ export const IMAGES = {
   hobbyImg12,
   paintBushImg,
   waveImg,
+  viewFileIcon,
+  roadmapIcon,
 };
