@@ -11,7 +11,7 @@ export const LastUpdated = () => {
       className='bg-section-bg p-10 flex justify-center border-t border-header-border'
     >
       <p className='text-sm text-section-secondary'>
-        {textConstants.lastUpdatedOn} 06-Oct-2024
+        {textConstants.lastUpdatedOn} 07-Oct-2024
       </p>
     </section>
   );

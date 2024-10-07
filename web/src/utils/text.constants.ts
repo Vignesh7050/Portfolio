@@ -20,4 +20,7 @@ export const textConstants = {
   home: 'Home',
   experience: 'Experience',
   redirectionPageMessage: 'Redirecting to Home page, Please wait...',
+  viewResume: 'View Resume',
+  download: 'Download',
+  close: 'Close',
 };

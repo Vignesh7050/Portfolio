@@ -194,3 +194,11 @@ export const paintingsList = [
     imageUrl: IMAGES.hobbyImg12,
   },
 ];
+
+export const externalLinks = {
+  resumeView:
+    'https://docs.google.com/document/d/e/2PACX-1vS0_5EBgrLux9UTUA3emIHFpqm0ca7NgOoZgcQFU3YkhlwZBAPwlq-q45HVH1CKj0BlofJuWoRaVXPq/pub?embedded=true',
+  resumeDownload:
+    'https://docs.google.com/document/d/1wxBoX6d6g3iLGkSV22uQp7WNVhQ9TX-fM91xb3LlVqE/export?format=pdf',
+  roadmapView: 'https://roadmap.sh/r/embed?id=66fe72ce366148ee282cd00d',
+};
