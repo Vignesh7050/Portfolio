@@ -1,3 +1,5 @@
+'use client';
+
 import { IMAGES } from '@/assets/images';
 import { sendGAEvent } from '@next/third-parties/google';
 
