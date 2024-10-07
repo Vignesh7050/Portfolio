@@ -22,7 +22,7 @@ export const HeaderNavSection = () => {
 
   React.useEffect(() => {
     if (typeof window !== 'undefined') {
-      setNavItemSelected(location.hash);
+      setNavItemSelected(location.hash || '#home');
     }
   }, []);
 
