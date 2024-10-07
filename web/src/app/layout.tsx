@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Playfair_Display, Open_Sans, Roboto_Slab } from 'next/font/google';
+import { GoogleTagManager } from '@next/third-parties/google';
 
 import './globals.css';
 import { Providers } from './providers';
@@ -64,6 +65,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
+      <GoogleTagManager gtmId={process.env.GTM_ID || ''} />
       <body
         className={`${robotoSlab.className} ${playfairDisplay.variable} ${openSans.variable}`}
       >
