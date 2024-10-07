@@ -14,12 +14,17 @@ import { IMAGES } from '@/assets/images';
 import Image from 'next/image';
 
 export const HeaderNavSection = () => {
-  /**Build issue: need to check why window object is not accessible here */
   const [navItemSelected, setNavItemSelected] = React.useState('#home');
 
   const handleNavItemClick = (item: KeyValuePair) => {
     setNavItemSelected(item.path);
   };
+
+  React.useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setNavItemSelected(location.hash);
+    }
+  }, []);
 
   return (
     <>
