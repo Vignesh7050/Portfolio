@@ -1,4 +1,5 @@
 import { IMAGES } from '@/assets/images';
+import { sendGAEvent } from '@next/third-parties/google';
 
 import { externalLinks, textConstants } from '@/utils';
 import { ButtonWrapper, ImageWrapper } from '..';
@@ -6,6 +7,9 @@ import { ButtonWrapper, ImageWrapper } from '..';
 export const DownloadResume = () => {
   return (
     <ButtonWrapper
+      onPress={() =>
+        sendGAEvent({ event: 'buttonClicked', value: 'Resume Downloaded' })
+      }
       href={externalLinks.resumeDownload}
       endContent={
         <ImageWrapper
