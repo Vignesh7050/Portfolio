@@ -10,6 +10,7 @@ import { ButtonWrapper } from '../base-components/buttonWrapper';
 import { ImageWrapper } from '../base-components/imageWrapper';
 import { ResumeIFrame } from './resumeIFrame';
 import { DownloadResume } from '..';
+import { sendGAEvent } from '@next/third-parties/google';
 
 export const ViewResume = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -19,6 +20,7 @@ export const ViewResume = () => {
       <ButtonWrapper
         onPress={() => {
           onOpen();
+          sendGAEvent('event', 'buttonClicked', { value: 'Resume Viewed' });
         }}
         endContent={
           <ImageWrapper

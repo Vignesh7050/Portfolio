@@ -7,6 +7,7 @@ import { HobbiesDialog } from './hobbiesDialog';
 import { ButtonWrapper } from '../base-components/buttonWrapper';
 import { ImageWrapper } from '../base-components/imageWrapper';
 import { IMAGES } from '@/assets/images';
+import { sendGAEvent } from '@next/third-parties/google';
 
 export const Hobbies = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -16,7 +17,13 @@ export const Hobbies = () => {
       <SectionContainer id='hobbies' headerName={textConstants.hobbies}>
         <div className='flex justify-center'>
           <ButtonWrapper
-            onPress={onOpen}
+            onPress={() => {
+              onOpen();
+              sendGAEvent({
+                event: 'buttonClicked',
+                value: 'Hobbies: Paintings Viewed',
+              });
+            }}
             endContent={
               <ImageWrapper
                 src={IMAGES.paintBushImg}
