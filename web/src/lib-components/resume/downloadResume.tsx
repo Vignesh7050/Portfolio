@@ -9,7 +9,9 @@ export const DownloadResume = () => {
   return (
     <ButtonWrapper
       onPress={() => {
-        sendGAEvent('event', 'buttonClicked', { value: 'Resume Viewed' });
+        sendGAEvent('event', 'resume_download_button_pressed', {
+          value: 'Resume Downloaded',
+        });
       }}
       href={externalLinks.resumeDownload}
       endContent={
