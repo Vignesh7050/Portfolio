@@ -1,4 +1,5 @@
 import { Button, Link } from '@nextui-org/react';
+import { MouseEventHandler } from 'react';
 
 type ButtonWrapperProps = {
   onPress?: ((e: any) => void) | undefined;
@@ -15,11 +16,13 @@ type ButtonWrapperProps = {
   children?: React.ReactNode;
   endContent?: React.ReactNode | string;
   href?: string;
+  onClick?: MouseEventHandler<HTMLButtonElement> | undefined;
 };
 
 export const ButtonWrapper = (props: ButtonWrapperProps) => {
   const {
     onPress,
+    onClick,
     variant = 'bordered',
     children,
     endContent,
@@ -40,6 +43,7 @@ export const ButtonWrapper = (props: ButtonWrapperProps) => {
     <Button
       className={`w-fit text-sm font-semibold rounded-lg ${getExtraClassNames()}`}
       onPress={onPress}
+      onClick={onClick}
       variant={variant}
       endContent={endContent}
       size='md'

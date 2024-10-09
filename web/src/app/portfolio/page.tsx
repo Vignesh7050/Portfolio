@@ -3,7 +3,6 @@ import {
   Education,
   Hobbies,
   HomePageContent,
-  LastUpdated,
   TechSkills,
   WorkExperience,
 } from '@/lib-components';
@@ -17,7 +16,6 @@ export default function ProfilePage() {
       <Hobbies />
       <Education />
       <Contact />
-      <LastUpdated />
     </>
   );
 }
