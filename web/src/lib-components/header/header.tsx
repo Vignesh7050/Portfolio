@@ -7,7 +7,7 @@ export const Header = () => {
     <header
       className='bg-profile-header 
                 w-full sticky top-0 z-20
-                flex justify-between p-5 gap-2.5 
+                flex justify-between p-4 gap-2.5 
                 backdrop-blur-xl items-center border-b border-header-border'
     >
       <HeaderTitleSection />

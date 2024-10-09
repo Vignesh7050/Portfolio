@@ -25,7 +25,7 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'My Portfolio - Vignesh Acharya',
+  title: 'Portfolio | Vignesh Acharya',
   description: 'Portfolio website - Vignesh Acharya',
   applicationName: 'My Portfolio',
   authors: [

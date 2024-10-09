@@ -22,7 +22,7 @@ export const HeaderTitleSection = () => {
           onOpenChange={onOpenChange}
           headerText='Vignesh Acharya'
         >
-          <ProfileImg className='w-full' isDisabled={true} />
+          <ProfileImg className='w-full rounded-lg' isDisabled={true} />
         </Dialog>
       )}
     </div>
