@@ -19,9 +19,8 @@ export const Hobbies = () => {
           <ButtonWrapper
             onPress={() => {
               onOpen();
-              sendGAEvent({
-                event: 'buttonClicked',
-                value: 'Hobbies: Paintings Viewed',
+              sendGAEvent('event', 'painting_hobby_button_pressed', {
+                value: 'Painints Viewed',
               });
             }}
             endContent={
