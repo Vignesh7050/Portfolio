@@ -20,7 +20,7 @@ export const ViewResume = () => {
       <ButtonWrapper
         onPress={() => {
           onOpen();
-          sendGAEvent('event', 'buttonClicked', { value: 'Resume Viewed' });
+          sendGAEvent('event', 'resume_view_button_pressed', { value: 'Resume Viewed' });
         }}
         endContent={
           <ImageWrapper
