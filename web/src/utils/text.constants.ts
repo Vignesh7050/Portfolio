@@ -23,4 +23,5 @@ export const textConstants = {
   viewResume: 'View Resume',
   download: 'Download',
   close: 'Close',
+  view: 'View',
 };

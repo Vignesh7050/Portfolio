@@ -27,11 +27,11 @@
 
   --color-profile-header: linear-gradient(
     to right,
-    rgba(225, 225, 225, 0.897) #ffff
+    rgba(255, 255, 255, 0.897) #ffff
   );
   --profile-page-bg: linear-gradient(
       to right,
-      rgba(194, 194, 194, 0.911),
+      rgb(255, 255, 255),
       rgba(237, 237, 237, 0.911)
     ),
     url(../assets/images/profilebg.png);
@@ -69,10 +69,7 @@
   --profile-page-bg: linear-gradient(
       to bottom right,
       var(--color-primary),
-      var(--color-primary-90),
-      rgb(0, 3, 8),
-      var(--color-primary-90),
-      var(--color-primary)
+      var(--color-primary-90)
     ),
     url(../assets/images/profilebg.png);
 }

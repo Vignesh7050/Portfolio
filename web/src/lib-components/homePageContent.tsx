@@ -4,7 +4,6 @@ import Image from 'next/image';
 
 import { profileContent, textConstants } from '@/utils';
 import { IMAGES } from '@/assets/images';
-import { PortfolioRoadMap } from './roadmap/portfolioRoadMap';
 
 type HomePageContentProps = {
   pageContent: any;
@@ -38,7 +37,6 @@ export const HomePageContent = (props: HomePageContentProps) => {
       <p className='text-lg p-3 pb-20 text-center'>
         {pageContent.profileSummary}
       </p>
-      <PortfolioRoadMap />
     </div>
   );
 };
