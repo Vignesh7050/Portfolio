@@ -1,8 +1,11 @@
+'use client';
+
 import { KeyValuePair, textConstants, workExperience } from '@/utils';
 import { SectionContainer } from './sectionContainer';
 import { EntityHeader } from './entityHeading';
 import { EntityDisplayStartEndDate } from './entityDisplayStartEndDate';
 import { ResumeSection } from './resume/resumeSection';
+import { PortfolioRoadMap } from '.';
 
 export const WorkExperience = () => {
   return (
@@ -36,6 +39,7 @@ export const WorkExperience = () => {
         );
       })}
       <ResumeSection />
+      <PortfolioRoadMap />
     </SectionContainer>
   );
 };

@@ -10,7 +10,7 @@ export const PortfolioRoadMap = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
-    <>
+    <div className='flex justify-center'>
       <ButtonWrapper
         onPress={onOpen}
         endContent={
@@ -33,6 +33,6 @@ export const PortfolioRoadMap = () => {
           <PortfolioRoadmapIFrame />
         </Dialog>
       )}
-    </>
+    </div>
   );
 };

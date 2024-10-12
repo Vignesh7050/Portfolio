@@ -31,7 +31,7 @@ export const ViewResume = () => {
           />
         }
       >
-        {textConstants.viewResume}
+        {textConstants.view}
       </ButtonWrapper>
       {isOpen && (
         <Dialog
