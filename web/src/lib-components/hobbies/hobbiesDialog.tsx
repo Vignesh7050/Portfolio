@@ -1,7 +1,7 @@
 import { KeyValuePair, paintingsList, textConstants } from '@/utils';
 import { Dialog } from '../base-components/dialog';
-import Image from 'next/image';
 import { IMAGES } from '@/assets/images';
+import { ImageWrapper } from '../base-components/imageWrapper';
 
 type HobbiesDialogProps = {
   isOpen: boolean;
@@ -20,10 +20,9 @@ export const HobbiesDialog = (props: HobbiesDialogProps) => {
           headerText={
             <div className='flex gap-2'>
               <p>{textConstants.paintings}</p>
-              <Image
+              <ImageWrapper
                 src={IMAGES.paintBushImg}
-                alt='profile image'
-                priority
+                alt='paint image'
                 width={25}
                 height={25}
               />
@@ -34,11 +33,10 @@ export const HobbiesDialog = (props: HobbiesDialogProps) => {
         >
           {paintingsList.map((painting: KeyValuePair, index: number) => {
             return (
-              <Image
+              <ImageWrapper
                 className='w-full h-auto rounded-lg'
                 src={painting.imageUrl}
-                alt='profile image'
-                priority
+                alt='paint image'
                 key={`${painting.id}-${index}`}
               />
             );

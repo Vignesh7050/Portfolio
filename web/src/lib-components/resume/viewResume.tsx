@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { useDisclosure } from '@nextui-org/react';
+import { sendGAEvent } from '@next/third-parties/google';
 
 import { IMAGES } from '@/assets/images';
 import { Dialog } from '../base-components/dialog';
@@ -10,7 +11,6 @@ import { ButtonWrapper } from '../base-components/buttonWrapper';
 import { ImageWrapper } from '../base-components/imageWrapper';
 import { ResumeIFrame } from './resumeIFrame';
 import { DownloadResume } from '..';
-import { sendGAEvent } from '@next/third-parties/google';
 
 export const ViewResume = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -20,7 +20,9 @@ export const ViewResume = () => {
       <ButtonWrapper
         onPress={() => {
           onOpen();
-          sendGAEvent('event', 'resume_view_button_pressed', { value: 'Resume Viewed' });
+          sendGAEvent('event', 'resume_view_button_pressed', {
+            value: 'Resume Viewed',
+          });
         }}
         endContent={
           <ImageWrapper

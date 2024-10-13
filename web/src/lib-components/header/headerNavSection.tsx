@@ -1,17 +1,18 @@
 'use client';
 
 import Link from 'next/link';
-import { navItems } from '@/utils/navItems';
 import React from 'react';
-import { KeyValuePair } from '@/utils';
 import {
   Dropdown,
   DropdownItem,
   DropdownMenu,
   DropdownTrigger,
 } from '@nextui-org/react';
+
 import { IMAGES } from '@/assets/images';
-import Image from 'next/image';
+import { ImageWrapper } from '../base-components/imageWrapper';
+import { KeyValuePair } from '@/utils';
+import { navItems } from '@/utils/navItems';
 
 export const HeaderNavSection = () => {
   const [navItemSelected, setNavItemSelected] = React.useState('#home');
@@ -48,14 +49,15 @@ export const HeaderNavSection = () => {
       <div className='block md:hidden'>
         <Dropdown>
           <DropdownTrigger>
-            <Image
-              className='cursor-pointer'
-              src={IMAGES.dropdownIcon}
-              alt='Menu'
-              priority
-              width={30}
-              height={30}
-            />
+            <div>
+              <ImageWrapper
+                className='cursor-pointer'
+                src={IMAGES.dropdownIcon}
+                alt='Menu'
+                width={30}
+                height={30}
+              />
+            </div>
           </DropdownTrigger>
           <DropdownMenu>
             {navItems.map((item: KeyValuePair) => {

@@ -1,4 +1,5 @@
 'use client';
+
 import {
   Dropdown,
   DropdownItem,
@@ -8,9 +9,10 @@ import {
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 import type { Selection } from '@nextui-org/react';
-import Image from 'next/image';
+
 import { IMAGES } from '@/assets/images';
 import { ThemeItem, themes } from '@/utils';
+import { ImageWrapper } from './base-components/imageWrapper';
 
 const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false);
@@ -29,14 +31,15 @@ const ThemeSwitcher = () => {
   return (
     <Dropdown>
       <DropdownTrigger>
-        <Image
-          className='cursor-pointer'
-          src={IMAGES.settingsIcon}
-          alt='settings'
-          priority
-          width={20}
-          height={20}
-        />
+        <div>
+          <ImageWrapper
+            className='cursor-pointer'
+            src={IMAGES.settingsIcon}
+            alt='settings'
+            width={20}
+            height={20}
+          />
+        </div>
       </DropdownTrigger>
       <DropdownMenu
         aria-label='theme selection'
