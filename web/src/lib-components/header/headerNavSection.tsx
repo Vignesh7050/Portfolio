@@ -54,8 +54,8 @@ export const HeaderNavSection = () => {
                 className='cursor-pointer'
                 src={IMAGES.dropdownIcon}
                 alt='Menu'
-                width={30}
-                height={30}
+                width={25}
+                height={25}
               />
             </div>
           </DropdownTrigger>
