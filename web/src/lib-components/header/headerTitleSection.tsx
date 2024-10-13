@@ -1,9 +1,11 @@
 'use client';
 
+import { useDisclosure } from '@nextui-org/react';
+
 import { IMAGES } from '@/assets/images';
-import Image from 'next/image';
 import { Dialog } from '../base-components/dialog';
-import { Tooltip, useDisclosure } from '@nextui-org/react';
+import { ImageWrapper } from '../base-components/imageWrapper';
+import { TooltipWrapper } from '../base-components/tooltipWrapper';
 
 export const HeaderTitleSection = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -32,18 +34,15 @@ export const HeaderTitleSection = () => {
 const ProfileImg = (props: any) => {
   const { className, tooltipContent, onClick, isDisabled = false } = props;
   return (
-    <Tooltip
-      isDisabled={isDisabled}
-      content={tooltipContent}
-      className='bg-foreground text-background'
-    >
-      <Image
-        className={className}
-        src={IMAGES.profile}
-        alt='profile image'
-        priority
-        onClick={onClick}
-      />
-    </Tooltip>
+    <TooltipWrapper isDisabled={isDisabled} content={tooltipContent}>
+      <div>
+        <ImageWrapper
+          className={className}
+          src={IMAGES.profile}
+          alt='profile image'
+          onClick={onClick}
+        />
+      </div>
+    </TooltipWrapper>
   );
 };

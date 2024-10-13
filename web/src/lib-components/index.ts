@@ -14,3 +14,4 @@ export { Hobbies } from './hobbies/hobbies';
 /**LIB COMPONENTS */
 export { ButtonWrapper } from './base-components/buttonWrapper';
 export { ImageWrapper } from './base-components/imageWrapper';
+export { TooltipWrapper } from './base-components/tooltipWrapper';

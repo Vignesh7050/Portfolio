@@ -1,9 +1,8 @@
 'use client';
 
-import Image from 'next/image';
-
 import { profileContent, textConstants } from '@/utils';
 import { IMAGES } from '@/assets/images';
+import { ImageWrapper } from './base-components/imageWrapper';
 
 type HomePageContentProps = {
   pageContent: any;
@@ -19,14 +18,8 @@ export const HomePageContent = (props: HomePageContentProps) => {
     >
       <h2 className='text-4xl text-center p-10 flex'>
         {textConstants.hello}
-        <Image
-          priority
-          src={IMAGES.waveImg}
-          alt='wave'
-          width={40}
-          height={40}
-        />
-        , I&apos;m
+        <ImageWrapper src={IMAGES.waveImg} alt='wave' width={40} height={40} />,
+        I&apos;m
       </h2>
       <h1>
         <strong className='text-header-color text-5xl'>

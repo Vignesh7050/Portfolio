@@ -1,13 +1,14 @@
 'use client';
 
-import { textConstants } from '@/utils';
+import { sendGAEvent } from '@next/third-parties/google';
 import { useDisclosure } from '@nextui-org/react';
+
+import { textConstants } from '@/utils';
 import { SectionContainer } from '../sectionContainer';
 import { HobbiesDialog } from './hobbiesDialog';
 import { ButtonWrapper } from '../base-components/buttonWrapper';
 import { ImageWrapper } from '../base-components/imageWrapper';
 import { IMAGES } from '@/assets/images';
-import { sendGAEvent } from '@next/third-parties/google';
 
 export const Hobbies = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
