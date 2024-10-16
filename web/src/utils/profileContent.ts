@@ -136,7 +136,7 @@ export const educationDetails = [
   {
     id: 1,
     instituteName:
-      'NMAM Institute of Technology, Nitte, Karkala Taluk, Udupi - 574116, Karnataka, India',
+      'NMAM Institute of Technology, Nitte, Karkala Taluk, Udupi - 574110, Karnataka, India',
     joiningDate: 'August 2017',
     endingDate: 'July 2021',
     course: 'Bachelor of Engineering in Computer Science',
