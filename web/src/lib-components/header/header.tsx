@@ -8,7 +8,7 @@ export const Header = () => {
       className='bg-profile-header 
                 w-full sticky top-0 z-20
                 flex justify-between p-4 gap-2.5 
-                backdrop-blur-xl items-center border-b border-header-border'
+                backdrop-blur-xl items-center'
     >
       <HeaderTitleSection />
       <div className='flex items-center gap-6'>

@@ -36,8 +36,8 @@ const ThemeSwitcher = () => {
             className='cursor-pointer'
             src={IMAGES.settingsIcon}
             alt='settings'
-            width={15}
-            height={15}
+            width={18}
+            height={18}
           />
         </div>
       </DropdownTrigger>
