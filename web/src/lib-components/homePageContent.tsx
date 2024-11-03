@@ -21,13 +21,13 @@ export const HomePageContent = (props: HomePageContentProps) => {
         <ImageWrapper src={IMAGES.waveImg} alt='wave' width={40} height={40} />,
         I&apos;m
       </h2>
-      <h1>
-        <strong className='text-header-color text-5xl'>
+      <h1 className='author-name text-center'>
+        <strong className='text-header-color text-6xl'>
           {pageContent.authorName}
         </strong>
       </h1>
-      <h2 className='text-3xl'>{pageContent.authorDesignation}</h2>
-      <p className='text-lg p-3 pb-20 text-center'>
+      <h2 className='text-3xl author-designation'>{pageContent.authorDesignation}</h2>
+      <p className='text-2xl p-3 pb-20 text-center'>
         {pageContent.profileSummary}
       </p>
     </div>
