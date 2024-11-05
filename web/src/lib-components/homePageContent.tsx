@@ -27,7 +27,7 @@ export const HomePageContent = (props: HomePageContentProps) => {
         </strong>
       </h1>
       <h2 className='text-3xl author-designation'>{pageContent.authorDesignation}</h2>
-      <p className='text-2xl p-3 pb-20 text-center'>
+      <p className='text-lg p-3 pb-20 text-center'>
         {pageContent.profileSummary}
       </p>
     </div>

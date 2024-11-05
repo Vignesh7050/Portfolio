@@ -10,7 +10,7 @@ function ProfileLayout(props: ProfileLayoutProps) {
   return (
     <>
       <Header />
-      <div className='bg-profile-bg'>{children}</div>
+      <div className='bg-profile-bg bg-cover bg-no-repeat h-screen bg-fixed'>{children}</div>
     </>
   );
 }

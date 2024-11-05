@@ -30,9 +30,10 @@
     rgba(255, 255, 255, 0.897) #ffff
   );
   --profile-page-bg: linear-gradient(
-      to right,
+      to bottom,
       rgb(255, 255, 255),
-      rgba(237, 237, 237, 0.911)
+      rgba(165, 204, 255, 0.9),
+      rgba(2, 18, 34, 0.9)
     ),
     url(../assets/images/profilebg.png);
 }
@@ -67,7 +68,7 @@
     var(--color-primary)
   );
   --profile-page-bg: linear-gradient(
-      to bottom right,
+      to bottom,
       var(--color-primary),
       var(--color-primary-90)
     ),
