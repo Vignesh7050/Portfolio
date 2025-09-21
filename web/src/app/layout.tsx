@@ -11,13 +11,6 @@ const openSans = Open_Sans({
   variable: '--font-open-sans',
 });
 
-const robotoSlab = Roboto_Slab({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-roboto-slab',
-  weight: ['100', '400', '700'],
-});
-
 const roboto = Roboto({
   subsets: ['latin'],
   display: 'swap',
