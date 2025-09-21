@@ -1,4 +1,4 @@
-import profile from './myprofileNew1.jpg';
+import profile from './myProfileNew1.jpg';
 import googleIcon from './googleIcon.svg';
 import linkedInIcon from './linkedInIcon.svg';
 import gitHubIcon from './Github.svg';
