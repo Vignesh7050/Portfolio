@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Playfair_Display, Open_Sans, Roboto_Slab, Roboto } from 'next/font/google';
+import { Playfair_Display, Open_Sans, Roboto } from 'next/font/google';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 import './globals.css';
