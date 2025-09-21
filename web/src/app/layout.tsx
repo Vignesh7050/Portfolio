@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Playfair_Display, Open_Sans, Roboto_Slab } from 'next/font/google';
+import { Playfair_Display, Open_Sans, Roboto_Slab, Roboto } from 'next/font/google';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 import './globals.css';
@@ -15,6 +15,13 @@ const robotoSlab = Roboto_Slab({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-roboto-slab',
+  weight: ['100', '400', '700'],
+});
+
+const roboto = Roboto({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-roboto',
   weight: ['100', '400', '700'],
 });
 
@@ -67,7 +74,7 @@ export default function RootLayout({
     <html lang='en'>
       <GoogleAnalytics gaId={process.env.GA_ID || ''} />
       <body
-        className={`${robotoSlab.className} ${playfairDisplay.variable} ${openSans.variable}`}
+        className={`${roboto.className} ${playfairDisplay.variable} ${openSans.variable}`}
       >
         <Providers>{children}</Providers>
       </body>

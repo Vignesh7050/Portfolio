@@ -29,7 +29,7 @@ export const HeaderNavSection = () => {
 
   return (
     <>
-      <nav className='flex justify-between items-center h-fit text-sm font-bold hidden w-full md:block md:w-auto'>
+      <nav className='flex justify-between items-center h-fit text-md text-gray-700 font-bold hidden w-full md:block md:w-auto'>
         <ul className='flex list-none gap-x-6'>
           {navItems.map((item: KeyValuePair) => {
             return (

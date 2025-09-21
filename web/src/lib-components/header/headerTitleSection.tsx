@@ -12,7 +12,7 @@ export const HeaderTitleSection = () => {
   return (
     <div className='flex items-center gap-4'>
       <ProfileImg
-        className='flex w-9 h-9 rounded-full cursor-pointer'
+        className='flex w-12 h-12 rounded-full cursor-pointer'
         tooltipContent='Click to View'
         onClick={onOpen}
       />

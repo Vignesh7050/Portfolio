@@ -25,7 +25,7 @@ export const WorkExperience = () => {
                   (details: KeyValuePair, detailsIndex: number) => {
                     return (
                       <li
-                        className='p-1 text-section-secondary'
+                        className='p-2 text-lg'
                         key={`${details.id}-${detailsIndex}`}
                       >
                         {details.text}
@@ -38,8 +38,8 @@ export const WorkExperience = () => {
           </ul>
         );
       })}
-      <ResumeSection />
-      <PortfolioRoadMap />
+      {/* <ResumeSection />
+      <PortfolioRoadMap /> */}
     </SectionContainer>
   );
 };

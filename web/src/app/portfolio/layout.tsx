@@ -9,8 +9,10 @@ function ProfileLayout(props: ProfileLayoutProps) {
 
   return (
     <>
-      <Header />
-      <div className='bg-profile-bg bg-cover bg-no-repeat bg-fixed'>{children}</div>
+      <div className='bg-profile-bg bg-cover bg-no-repeat bg-fixed'>
+        <Header />
+        {children}
+      </div>
     </>
   );
 }

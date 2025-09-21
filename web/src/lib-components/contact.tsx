@@ -13,7 +13,7 @@ import { ImageWrapper } from './base-components/imageWrapper';
 export const Contact = () => {
   return (
     <SectionContainer id='contact' headerName={textConstants.contact}>
-      <div className='flex justify-center items-center gap-10'>
+      <div className='flex justify-center items-center gap-20'>
         {profileContent.contactDetails.map(
           (contacts: KeyValuePair, index: number) => {
             return (
@@ -25,8 +25,8 @@ export const Contact = () => {
                         <ImageWrapper
                           src={contacts.icon2 || contacts.icon}
                           alt='profile image'
-                          width={50}
-                          height={50}
+                          width={60}
+                          height={60}
                           className='cursor-pointer'
                         />
                       </PopoverTrigger>
@@ -59,8 +59,8 @@ export const Contact = () => {
                       <ImageWrapper
                         src={contacts.icon2 || contacts.icon}
                         alt='profile image'
-                        width={50}
-                        height={50}
+                        width={60}
+                        height={60}
                         className='cursor-pointer'
                       />
                     </Link>

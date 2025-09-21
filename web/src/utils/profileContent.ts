@@ -3,9 +3,9 @@ import { IMAGES } from '@/assets/images';
 export const profileContent = {
   headerTitle: 'Developer',
   authorName: 'Vignesh Acharya',
-  authorDesignation: 'Software Engineer',
+  authorDesignation: 'Full Stack Web Developer',
   profileSummary:
-    'React.js Software Engineer with 3+ years of experience in JavaScript, TypeScript, and Agile methodologies. ',
+    'Full-stack developer experienced in React.js, FastAPI/Node.js, and AWS, building scalable web applications and browser-based large file upload solutions. Skilled in unit-tested, reusable React architectures, serverless deployments, and delivering end-to-end solutions in Agile teams.',
   contactDetails: [
     {
       id: 1,
@@ -45,55 +45,58 @@ export const profileContent = {
 };
 
 export const skillsList = [
+  // Languages
   {
     src: IMAGES.javaScriptIcon,
     titleContent: 'JavaScript',
     alt: 'JavaScript',
+    group: 'Languages',
   },
   {
     src: IMAGES.typeScriptIcon,
     titleContent: 'TypeScript',
     alt: 'TypeScript',
-  },
-  {
-    src: IMAGES.reactJsIcon,
-    titleContent: 'React Js',
-    alt: 'ReactJs',
-  },
-  {
-    src: IMAGES.nextJsIcon,
-    titleContent: 'Next Js',
-    alt: 'NextJs',
-  },
-  {
-    src: IMAGES.reduxIcon,
-    titleContent: 'Redux',
-    alt: 'Redux',
-  },
-  {
-    src: IMAGES.nodeJsIcon,
-    titleContent: 'Node Js',
-    alt: 'Nodejs',
-  },
-  {
-    src: IMAGES.gitIcon,
-    titleContent: 'Git',
-    alt: 'Git',
-  },
-  {
-    src: IMAGES.bitBucketIcon,
-    titleContent: 'Bitbucket',
-    alt: 'Bitbucket',
+    group: 'Languages',
   },
   {
     src: IMAGES.htmlIcon,
     titleContent: 'HTML5',
-    alt: 'Html',
+    alt: 'HTML5',
+    group: 'Languages',
   },
   {
     src: IMAGES.cssIcon,
     titleContent: 'CSS3',
-    alt: 'Css',
+    alt: 'CSS3',
+    group: 'Languages',
+  },
+
+  // Frontend
+  {
+    src: IMAGES.reactJsIcon,
+    titleContent: 'React.js',
+    alt: 'ReactJs',
+    group: 'Frontend',
+  },
+  {
+    src: IMAGES.nextJsIcon,
+    titleContent: 'Next.js',
+    alt: 'NextJs',
+    group: 'Frontend',
+  },
+  {
+    src: IMAGES.reduxIcon,
+    titleContent: 'Redux Toolkit',
+    alt: 'Redux',
+    group: 'Frontend',
+  },
+
+  // Backend
+  {
+    src: IMAGES.nodeJsIcon,
+    titleContent: 'Node.js',
+    alt: 'NodeJs',
+    group: 'Backend',
   },
 ];
 
@@ -106,27 +109,31 @@ export const workExperience = [
     experienceDetails: [
       {
         id: 1,
-        text: 'Developing and maintaining scalable web applications using React.js and Node.js',
+        text: 'Engineered a browser-based S3 multipart upload solution using React.js + FastAPI, handling 2–5 GB files in bulk (100GB+ total) with direct-to-S3 transfers and dynamic chunking, boosting speed and offloading servers.',
       },
       {
         id: 2,
-        text: 'Worked on Unit Testing of React.js components using Jest and React-testing-library ',
+        text: 'Built a reliable upload experience with live progress tracking and safeguards against browser refresh/navigation interruptions.',
       },
       {
         id: 3,
-        text: 'Proactively suggested and implemented code quality improvements, including refactoring components, creating reusable components, using proper types in typescript to avoid bugs and enforcing coding standards.',
+        text: 'Developed multiple React.js admin dashboards with unit test coverage 80%+ using Jest and React Testing Library.',
       },
       {
         id: 4,
-        text: 'Collaborated closely with cross-functional teams in an Agile environment to deliver high-quality software on time.',
+        text: 'Established a standardized React architecture (HLD/LLD) with Husky, ESLint, Zustand, custom hooks, and reusable component patterns.',
       },
       {
         id: 5,
-        text: 'Utilized custom React hooks for clean code architecture, ensuring separation of concerns and adhering to DRY principles.',
+        text: 'Optimized S3 data storage with partitioning, reducing Athena scan size and improving query performance for analytics workloads.',
       },
       {
         id: 6,
-        text: ' Implemented modern state management solutions like Redux for seamless front-end application architecture.',
+        text: 'Delivered end-to-end full-stack solutions for client projects, covering React, FastAPI/Node.js, AWS services, and CI/CD automation with Jenkins and SAM templates.',
+      },
+      {
+        id: 7,
+        text: 'Collaborated in Agile methodology, leading sprint demos, refining requirements with clients, and ensuring timely delivery aligned with business needs.',
       },
     ],
   },

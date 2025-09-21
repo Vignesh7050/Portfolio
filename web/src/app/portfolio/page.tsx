@@ -13,8 +13,8 @@ export default function ProfilePage() {
       <HomePageContent pageContent={undefined} />
       <WorkExperience />
       <TechSkills />
-      <Hobbies />
       <Education />
+      <Hobbies />
       <Contact />
     </>
   );

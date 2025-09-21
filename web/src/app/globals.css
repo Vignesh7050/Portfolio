@@ -35,7 +35,7 @@
       rgba(165, 204, 255, 0.9),
       rgba(2, 18, 34, 0.9)
     ),
-    url(../assets/images/profilebg.png);
+    url(../assets/images/profilebgV2.png);
 }
 
 .dark {
@@ -72,7 +72,7 @@
       var(--color-primary),
       var(--color-primary-90)
     ),
-    url(../assets/images/profilebg.png);
+    url(../assets/images/profilebgV2.png);
 }
 
 html,
